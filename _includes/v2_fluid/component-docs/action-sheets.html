@@ -25,18 +25,28 @@ export class MyPage {
 
   presentActionSheet() {
     let actionSheet = this.actionSheetCtrl.create({
-      title: 'Modify your album',
+      title: 'Albums',
       buttons: [
         {
-          text: 'Destructive',
+          text: 'Delete',
           role: 'destructive',
           handler: () => {
-            console.log('Destructive clicked');
+            console.log('Delete clicked');
           }
         },{
-          text: 'Archive',
+          text: 'Share',
           handler: () => {
-            console.log('Archive clicked');
+            console.log('Share clicked');
+          }
+        },{
+          text: 'Play',
+          handler: () => {
+            console.log('Play clicked');
+          }
+        },{
+          text: 'Favorite',
+          handler: () => {
+            console.log('Favorite clicked');
           }
         },{
           text: 'Cancel',
